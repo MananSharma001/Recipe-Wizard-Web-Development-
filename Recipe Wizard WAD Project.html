@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+    <title>Chef In Your Hands</title>
+    <style>
+	.recipe-wizard {
+            font-family: 'Tangerine, cursive;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-blend-mode: overlay;
+            color: black; /* Text color */
+        }
+	h1 {
+	    font-family: 'Tangerine';
+	}
+    header {
+    background-color: #abc;
+    color: #265;
+    text-align: center;
+    padding: 20px;
+    font-family: cursive;
+}
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: powderblue;
+	    font-size: 50px;
+        }
+        .recipe {
+            margin-bottom: 30px;
+	    font-size: 25px;
+        }
+        .recipe h3 {
+            color: powderblue;
+        }
+        .recipe ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .img{
+            height: 10px;
+            width: 10px;
+        
+        }
+        .recipe ul li {
+            margin-bottom: 10px;
+        }
+        .search-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .search-container input[type=text] {
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            width: 30%;
+        }
+        .search-container input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .search-container input[type=submit]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>   
+    <header style="font-family: cursive;">
+        <h1 class="recipe-wizard" style='font-size:120px'>Recipe Wizard</h1>
+	<h1 style='font-size:100px'>Exploring the world of Recipes</h1>
+        <div class="search-container">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search For Cuisine" name="search">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    </header>    
+	<main>
+        <b><strong>
+        <div class="recipe">
+            <h2>Palak Paneer</h2>
+            <img src="r1.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>250g paneer</li>
+                <li>2 bunches spinach</li>
+                <li>1 onion, chopped</li>
+                <li>2 tomatoes, chopped</li>
+                <li>2 green chilies</li>
+                <li>1 tbsp ginger-garlic paste</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Blanch spinach leaves and blend into a smooth paste.</li>
+                <li>Heat oil in a pan, add cumin seeds, onions, green chilies, and ginger-garlic paste. Sauté until onions are golden brown.</li>
+                <li>Add tomatoes, turmeric powder, and salt. Cook until tomatoes are soft.</li>
+                <li>Add spinach paste and cook for a few minutes.</li>
+                <li>Add paneer cubes and garam masala. Cook for another 5 minutes.</li>
+                <li>Palak Paneer is ready to serve. Enjoy with rice or naan.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Masala Dosa</h2>
+            <img src="r2.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup rice</li>
+                <li>1/2 cup urad dal (black gram)</li>
+                <li>1/4 cup chana dal (split chickpeas)</li>
+                <li>1/2 tsp fenugreek seeds</li>
+                <li>1/2 cup cooked rice</li>
+                <li>Salt to taste</li>
+                <li>Oil or ghee for cooking</li>
+                <li>For masala filling:</li>
+                <li>2 large potatoes, boiled and mashed</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 green chilies, finely chopped</li>
+                <li>1/2 tsp mustard seeds</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>A few curry leaves</li>
+                <li>2 tbsp oil</li>
+                <li>Salt to taste</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Wash and soak rice, urad dal, chana dal, and fenugreek seeds separately for at least 6 hours.</li>
+                <li>Grind soaked rice and cooked rice together to form a smooth batter. Similarly, grind soaked dals to a smooth batter.</li>
+                <li>Mix both batters together, add salt, and let it ferment overnight or for at least 8 hours.</li>
+                <li>For the masala filling, heat oil in a pan, add mustard seeds, and let them splutter.</li>
+                <li>Add chopped onions, green chilies, and curry leaves. Sauté until onions turn translucent.</li>
+                <li>Add turmeric powder and mashed potatoes. Mix well and cook for a few minutes. Add salt to taste. Masala filling is ready.</li>
+                <li>To make dosas, heat a griddle or non-stick pan. Pour a ladleful of batter and spread it in a circular motion to form a thin dosa.</li>
+                <li>Drizzle oil or ghee around the edges of the dosa. Cook until the bottom side is golden brown.</li>
+                <li>Flip the dosa and cook the other side for a minute. Remove from heat.</li>
+                <li>Place a portion of masala filling on one half of the dosa, fold it over, and serve hot with chutney and sambar.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Chole Bhature</h2>
+            <img src="chole bhature.webp">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 cups chickpeas (chole), soaked overnight</li>
+                <li>2 onions, finely chopped</li>
+                <li>2 tomatoes, finely chopped</li>
+                <li>2 green chilies, finely chopped</li>
+                <li>1 inch ginger, grated</li>
+                <li>3 cloves garlic, minced</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1 tsp coriander powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil</li>
+                <li>Fresh coriander leaves for garnish</li>
+                <li>For Bhature:</li>
+                <li>2 cups all-purpose flour</li>
+                <li>1/2 cup yogurt</li>
+                <li>1 tsp baking powder</li>
+                <li>1/2 tsp baking soda</li>
+                <li>Salt to taste</li>
+                <li>Oil for frying</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Pressure cook soaked chickpeas until soft.</li>
+                <li>Heat oil in a pan, add cumin seeds, onions, green chilies, ginger, and garlic. Sauté until onions are golden brown.</li>
+                <li>Add tomatoes and cook until they turn mushy.</li>
+                <li>Add coriander powder, turmeric powder, red chili powder, and salt. Cook for a few minutes.</li>
+                <li>Add cooked chickpeas along with some water and simmer for 10-15 minutes.</li>
+                <li>Garnish with garam masala and fresh coriander leaves.</li>
+                <li>For Bhature, mix all-purpose flour, yogurt, baking powder, baking soda, and salt to form a soft dough. Let it rest for 2 hours.</li>
+                <li>Divide the dough into small balls and roll out into circles.</li>
+                <li>Heat oil in a pan and fry the bhaturas until golden brown on both sides.</li>
+                <li>Serve hot with chole.</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h2>Rajma Chawal</h2>
+            <img src="Rajma-Chawal.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup rajma (kidney beans), soaked overnight</li>
+                <li>2 onions, finely chopped</li>
+                <li>2 tomatoes, finely chopped</li>
+                <li>1 inch ginger, grated</li>
+                <li>3 cloves garlic, minced</li>
+                <li>2 green chilies, slit</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1 tsp coriander powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil</li>
+                <li>Fresh coriander leaves for garnish</li>
+                <li>Cooked rice for serving</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Pressure cook soaked rajma until soft.</li>
+                <li>Heat oil in a pan, add cumin seeds, onions, green chilies, ginger, and garlic. Sauté until onions are golden brown.</li>
+                <li>Add tomatoes and cook until they turn mushy.</li>
+                <li>Add coriander powder, turmeric powder, red chili powder, and salt. Cook for a few minutes.</li>
+                <li>Add cooked rajma along with some water and simmer for 10-15 minutes.</li>
+                <li>Garnish with garam masala and fresh coriander leaves.</li>
+                <li>Serve hot with rice (chawal).</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Chole Chawal</h2>
+            <img src="cholechawal.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup chickpeas (chole), soaked overnight</li>
+                <li>2 onions, finely chopped</li>
+                <li>2 tomatoes, finely chopped</li>
+                <li>2 green chilies, slit</li>
+                <li>1 inch ginger, grated</li>
+                <li>3 cloves garlic, minced</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1 tsp coriander powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil</li>
+                <li>Fresh coriander leaves for garnish</li>
+                <li>Cooked rice for serving</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Pressure cook soaked chickpeas until soft.</li>
+                <li>Heat oil in a pan, add cumin seeds, onions, green chilies, ginger, and garlic. Sauté until onions are golden brown.</li>
+                <li>Add tomatoes and cook until they turn mushy.</li>
+                <li>Add coriander powder, turmeric powder, red chili powder, and salt. Cook for a few minutes.</li>
+                <li>Add cooked chickpeas along with some water and simmer for 10-15 minutes.</li>
+                <li>Garnish with garam masala and fresh coriander leaves.</li>
+                <li>Serve hot with rice (chawal).</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Garlic Naan</h2>
+            <img src="Garlic-Naan-square-FS-42.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>2 cups all-purpose flour</li>
+                <li>1/2 cup yogurt</li>
+                <li>1 tsp baking powder</li>
+                <li>1/2 tsp baking soda</li>
+                <li>1 tsp sugar</li>
+                <li>1/2 cup milk</li>
+                <li>2 tbsp oil</li>
+                <li>2 cloves garlic, minced</li>
+                <li>2 tbsp chopped coriander leaves</li>
+                <li>Butter for brushing</li>
+                <li>Garlic cloves, thinly sliced for garnish (optional)</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>In a mixing bowl, combine flour, baking powder, baking soda, sugar, yogurt, milk, and oil to make a soft dough.</li>
+                <li>Knead the dough for 5-7 minutes until smooth and elastic. Cover and let it rest for 2 hours.</li>
+                <li>Divide the dough into equal portions and roll each portion into a ball.</li>
+                <li>Flatten each ball and roll it out into a teardrop shape or oval, about 1/4 inch thick.</li>
+                <li>Heat a tawa or griddle over medium-high heat. Place the rolled naan on the hot tawa.</li>
+                <li>Cook until bubbles start to appear on the surface, then flip the naan.</li>
+                <li>Brush the cooked side with water and sprinkle minced garlic and chopped coriander leaves.</li>
+                <li>Flip again and cook until both sides are golden brown and slightly charred.</li>
+                <li>Remove from heat, brush with butter, and garnish with thinly sliced garlic cloves if desired.</li>
+                <li>Serve hot with your favorite curry or chutney.</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h2>Paneer Peri Peri Tikka</h2>
+            <img src="peri-peri-paneer-tikka-recipe-main-photo.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>250g paneer, cubed</li>
+                <li>1 bell pepper, cut into chunks</li>
+                <li>1 onion, cut into chunks</li>
+                <li>1/2 cup yogurt</li>
+                <li>2 tbsp peri peri sauce</li>
+                <li>1 tbsp lemon juice</li>
+                <li>1 tsp ginger-garlic paste</li>
+                <li>1 tsp coriander powder</li>
+                <li>1/2 tsp cumin powder</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil</li>
+                <li>Fresh coriander leaves for garnish</li>
+                <li>Lemon wedges for serving</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>In a bowl, mix yogurt, peri peri sauce, lemon juice, ginger-garlic paste, coriander powder, cumin powder, red chili powder, turmeric powder, salt, and oil to make marinade.</li>
+                <li>Add paneer cubes, bell pepper, and onion to the marinade. Coat them well. Marinate for at least 30 minutes.</li>
+                <li>Preheat the grill or oven to medium-high heat.</li>
+                <li>Thread marinated paneer, bell pepper, and onion onto skewers.</li>
+                <li>Grill the skewers for 8-10 minutes, turning occasionally, until paneer is golden brown and vegetables are charred at the edges.</li>
+                <li>Garnish with fresh coriander leaves and serve hot with lemon wedges.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Daal Chawal</h2>
+            <img src="moong-masoor-dal-rice.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup yellow lentils (moong dal), washed and soaked</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 tomatoes, finely chopped</li>
+                <li>2 green chilies, slit</li>
+                <li>1 inch ginger, grated</li>
+                <li>3 cloves garlic, minced</li>
+                <li>1 tsp cumin seeds</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>Salt to taste</li>
+                <li>2 tbsp oil or ghee</li>
+                <li>Fresh coriander leaves for garnish</li>
+                <li>Cooked rice for serving</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Pressure cook soaked lentils with turmeric powder and salt until soft and mushy.</li>
+                <li>Heat oil or ghee in a pan, add cumin seeds, and let them splutter.</li>
+                <li>Add chopped onions, green chilies, ginger, and garlic. Sauté until onions turn golden brown.</li>
+                <li>Add chopped tomatoes and cook until they turn mushy.</li>
+                <li>Add red chili powder and garam masala. Cook for a minute.</li>
+                <li>Add cooked lentils and mix well. Adjust consistency by adding water if needed.</li>
+                <li>Simmer for a few minutes until flavors are well blended.</li>
+                <li>Garnish with fresh coriander leaves.</li>
+                <li>Serve hot with rice (chawal).</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Undhiyu</h2>
+            <img src="Undhiyu-3.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup surti papdi (fresh pigeon peas)</li>
+                <li>1 cup small brinjals (eggplants), slit</li>
+                <li>1 cup sweet potatoes, diced</li>
+                <li>1 cup purple yam (ratalu), diced</li>
+                <li>1 cup baby potatoes, halved</li>
+                <li>1 cup raw bananas (kaccha kela), diced</li>
+                <li>1 cup fresh toovar (pigeon peas)</li>
+                <li>1/2 cup fresh coconut, grated</li>
+                <li>1/2 cup coriander leaves, chopped</li>
+                <li>1/4 cup sesame seeds (til)</li>
+                <li>1/4 cup peanuts, roasted and crushed</li>
+                <li>1/4 cup green garlic, chopped</li>
+                <li>1/4 cup ginger, grated</li>
+                <li>1/4 cup green chili, chopped</li>
+                <li>1/4 cup jaggery (gud), grated</li>
+                <li>1/4 cup tamarind (imli) pulp</li>
+                <li>1/4 cup oil</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>1 tsp coriander powder</li>
+                <li>1 tsp cumin seeds</li>
+                <li>Salt to taste</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Prepare the masala paste by grinding together grated coconut, coriander leaves, sesame seeds, roasted peanuts, green garlic, ginger, green chili, jaggery, tamarind pulp, turmeric powder, red chili powder, coriander powder, and salt. Set aside.</li>
+                <li>Heat oil in a large pan. Add cumin seeds and let them splutter.</li>
+                <li>Add the prepared masala paste and cook for a few minutes until aromatic.</li>
+                <li>Add all the diced vegetables and fresh toovar. Mix well to coat them with the masala.</li>
+                <li>Cover and cook on low heat until the vegetables are tender, stirring occasionally.</li>
+                <li>Once the vegetables are cooked, adjust the seasoning and garnish with chopped coriander leaves.</li>
+                <li>Serve hot with roti or puri.</li>
+            </ol>
+        </div>
+
+        <div class="recipe">
+            <h2>Khaman Dhokla</h2>
+            <img src="khaman.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup gram flour (besan)</li>
+                <li>1/2 cup yogurt</li>
+                <li>1/4 cup water</li>
+                <li>1 tsp ginger-green chili paste</li>
+                <li>1 tsp sugar</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1 tsp fruit salt (eno)</li>
+                <li>Salt to taste</li>
+                <li>For tempering:</li>
+                <li>2 tbsp oil</li>
+                <li>1 tsp mustard seeds</li>
+                <li>1 tsp cumin seeds</li>
+                <li>2-3 green chilies, slit</li>
+                <li>A few curry leaves</li>
+                <li>2 tbsp chopped coriander leaves</li>
+                <li>2 tbsp grated coconut (optional)</li>
+                <li>2 tbsp lemon juice</li>
+                <li>2 tbsp water</li>
+                <li>2 tbsp sugar</li>
+                <li>1/2 tsp salt</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>In a mixing bowl, combine gram flour, yogurt, water, ginger-green chili paste, sugar, turmeric powder, and salt to make a smooth batter.</li>
+                <li>Let the batter rest for 10-15 minutes.</li>
+                <li>Grease a steaming pan or dhokla plate with oil.</li>
+                <li>Add fruit salt (eno) to the batter and mix well. The batter will become frothy.</li>
+                <li>Immediately pour the batter into the greased pan and steam for 12-15 minutes until a toothpick inserted comes out clean.</li>
+                <li>For tempering, heat oil in a small pan. Add mustard seeds, cumin seeds, green chilies, and curry leaves. Let them splutter.</li>
+                <li>Remove from heat and add lemon juice, water, sugar, and salt. Mix well to make the tempering.</li>
+                <li>Pour the tempering evenly over the steamed dhokla.</li>
+                <li>Garnish with chopped coriander leaves and grated coconut.</li>
+                <li>Cut into squares and serve with green chutney or tamarind chutney.</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h2>Khichdi</h2>
+            <img src="Instant-Pot-Quinoa-Khichdi.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup rice</li>
+                <li>1/2 cup split yellow lentils (moong dal)</li>
+                <li>1 onion, chopped</li>
+                <li>1 tomato, chopped</li>
+                <li>1 inch ginger, grated</li>
+                <li>2 cloves garlic, minced</li>
+                <li>2 green chilies, chopped</li>
+                <li>1/2 tsp cumin seeds</li>
+                <li>1/2 tsp turmeric powder</li>
+                <li>1/2 tsp red chili powder</li>
+                <li>1/2 tsp garam masala</li>
+                <li>2 tbsp ghee or oil</li>
+                <li>Salt to taste</li>
+                <li>Fresh coriander leaves for garnish</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Rinse rice and lentils together until water runs clear. Soak them for 15-20 minutes.</li>
+                <li>Heat ghee or oil in a pressure cooker. Add cumin seeds and let them splutter.</li>
+                <li>Add chopped onions, ginger, garlic, and green chilies. Sauté until onions turn golden brown.</li>
+                <li>Add chopped tomatoes and cook until they turn mushy.</li>
+                <li>Add turmeric powder, red chili powder, garam masala, and salt. Mix well.</li>
+                <li>Add soaked rice and lentils. Mix well with the masala.</li>
+                <li>Add 4 cups of water and mix again.</li>
+                <li>Cover the pressure cooker and cook for 3-4 whistles or until khichdi is cooked and mushy.</li>
+                <li>Once the pressure releases, open the cooker and give the khichdi a gentle stir.</li>
+                <li>Garnish with fresh coriander leaves.</li>
+                <li>Serve hot with yogurt, pickle, or papad.</li>
+            </ol>
+
+        </div>
+        <div class="recipe">
+            <h2>Gulab Jamun</h2>
+            <img src="gulabjamun.jpeg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup milk powder</li>
+                <li>1/4 cup all-purpose flour (maida)</li>
+                <li>1/4 tsp baking soda</li>
+                <li>2 tbsp ghee or melted unsalted butter</li>
+                <li>1/4 cup milk (approx)</li>
+                <li>Oil or ghee for frying</li>
+                <li>For the sugar syrup:</li>
+                <li>1 cup sugar</li>
+                <li>1 cup water</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>A few saffron strands (optional)</li>
+                <li>Rose water or kewra water (optional)</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>In a mixing bowl, combine milk powder, all-purpose flour, and baking soda.</li>
+                <li>Add ghee or melted butter and mix well.</li>
+                <li>Add milk gradually and knead into a soft dough. The dough should be smooth and not too sticky.</li>
+                <li>Divide the dough into small equal-sized portions and roll them into smooth balls without any cracks. Make sure they are compact and smooth.</li>
+                <li>Heat oil or ghee in a deep frying pan over low to medium heat.</li>
+                <li>Once the oil is hot, carefully slide the dough balls into the hot oil. Fry them on low heat, stirring gently and continuously for even browning.</li>
+                <li>Fry until they turn golden brown and evenly cooked from all sides. Remove them from the oil and drain excess oil on a paper towel.</li>
+                <li>Prepare the sugar syrup by dissolving sugar in water over medium heat. Add cardamom powder and saffron strands. Bring it to a boil and simmer for 5-6 minutes until it reaches a sticky consistency. Add rose water or kewra water if using.</li>
+                <li>Remove the sugar syrup from heat and let it cool for a few minutes.</li>
+                <li>Soak the fried jamuns in warm sugar syrup for at least 2 hours. They will absorb the syrup and become soft and juicy.</li>
+                <li>Garnish with chopped nuts if desired and serve warm or at room temperature.</li>
+            </ol>
+
+        </div>
+
+        <div class="recipe">
+            <h2>Mysore Pak</h2>
+            <img src="GHEE-MYSORE-PAK-RECIPE-HOW-TO-MAKE-MYSORE-PAK-V1.jpeg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup besan (gram flour)</li>
+                <li>1 cup sugar</li>
+                <li>1 cup ghee</li>
+                <li>1/4 cup water</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>A few saffron strands (optional)</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Grease a plate or tray with ghee and keep it aside.</li>
+                <li>Heat ghee in a heavy-bottomed pan over low heat.</li>
+                <li>Once the ghee is melted, add besan to it.</li>
+                <li>Roast besan in ghee on low heat, stirring continuously to avoid burning. Roast until it turns golden brown and releases a nutty aroma. This may take about 12-15 minutes.</li>
+                <li>In a separate pan, combine sugar and water. Cook this syrup until it reaches one string consistency. You can check this by taking a drop of syrup between your thumb and index finger; it should form a single thread when you separate your fingers.</li>
+                <li>Once the syrup reaches the desired consistency, add cardamom powder and saffron strands. Mix well.</li>
+                <li>Now, carefully pour the hot syrup into the roasted besan mixture. Be cautious as it may splutter.</li>
+                <li>Quickly mix everything together until well combined and there are no lumps.</li>
+                <li>Transfer the mixture to the greased plate or tray and spread it evenly using a spatula or back of a spoon.</li>
+                <li>Allow it to cool for a few minutes, then cut it into desired shapes while it is still warm.</li>
+                <li>Let it cool completely before removing the pieces from the plate.</li>
+                <li>Your Mysore Pak is ready to be served. Store it in an airtight container for longer shelf life.</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h2>Gajar Halwa</h2>
+            <img src="Gajar-Ka-Halwa-2-3.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>500g carrots, grated</li>
+                <li>1 liter full-fat milk</li>
+                <li>1/2 cup sugar (adjust to taste)</li>
+                <li>4 tbsp ghee</li>
+                <li>1/4 cup mixed nuts (almonds, cashews, pistachios), chopped</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>A pinch of saffron strands</li>
+                <li>Optional: raisins for garnish</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Heat ghee in a heavy-bottomed pan or kadhai over medium heat.</li>
+                <li>Add the grated carrots to the pan and sauté them for 5-6 minutes until they turn soft.</li>
+                <li>Pour in the milk and let it come to a boil. Reduce the heat to low and simmer, stirring occasionally, until the carrots are cooked and the milk is reduced to about half its original quantity. This may take around 30-40 minutes.</li>
+                <li>Add sugar to the pan and mix well. Continue to cook until the mixture thickens and attains a halwa-like consistency. This may take another 15-20 minutes.</li>
+                <li>Once the mixture thickens, add chopped nuts, cardamom powder, and saffron strands. Mix well.</li>
+                <li>Continue to cook for a few more minutes until the ghee starts to separate from the mixture.</li>
+                <li>Remove the pan from heat and let the gajar halwa cool down slightly.</li>
+                <li>Garnish with more chopped nuts and raisins if desired.</li>
+                <li>Serve warm or at room temperature. Enjoy the delicious gajar halwa!</li>
+            </ol>
+        </div>
+        <div class="recipe">
+            <h2>Moong Dal Halwa</h2>
+            <img src="moongdalhalwa.jpg">
+            <h3>Ingredients:</h3>
+            <ul>
+                <li>1 cup split yellow moong dal (skinless)</li>
+                <li>1 cup ghee</li>
+                <li>1 cup sugar</li>
+                <li>2 cups milk</li>
+                <li>1/2 tsp cardamom powder</li>
+                <li>A few saffron strands</li>
+                <li>2 tbsp chopped nuts (almonds, cashews, pistachios)</li>
+                <li>2 tbsp raisins</li>
+            </ul>
+            <h3>Steps:</h3>
+            <ol>
+                <li>Wash the moong dal thoroughly and soak it in water for 4-5 hours or overnight.</li>
+                <li>Drain the soaked dal and grind it into a coarse paste without adding any water.</li>
+                <li>Heat ghee in a heavy-bottomed pan or kadhai over medium heat.</li>
+                <li>Add the ground moong dal paste to the pan and roast it in ghee, stirring continuously, until it turns golden brown and aromatic. This may take about 20-25 minutes.</li>
+                <li>In a separate pan, heat milk until it comes to a boil.</li>
+                <li>Add the boiled milk to the roasted moong dal paste and mix well. Cook, stirring continuously, until the mixture thickens and the ghee starts to separate from the sides of the pan.</li>
+                <li>Add sugar, cardamom powder, saffron strands, chopped nuts, and raisins to the pan. Mix well and continue to cook until the sugar dissolves completely and the halwa reaches a desired consistency.</li>
+                <li>Once the halwa reaches the desired consistency and ghee starts to ooze out from the sides, remove the pan from heat.</li>
+                <li>Transfer the halwa to a serving dish and garnish with more chopped nuts and saffron strands if desired.</li>
+                <li>Serve warm or at room temperature. Enjoy the delicious Moong Dal Halwa!</li>
+            </ol>
+        </div>
+        <div>
+            <img src="Thankyou.jpg">
+</div>
+    </strong></b>
+    </main>
+    <script>
+        // JavaScript for search functionality
+        document.getElementById('searchForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+            var recipes = document.querySelectorAll('.recipe');
+
+            recipes.forEach(function(recipe) {
+                var recipeTitle = recipe.querySelector('h2').textContent.toLowerCase();
+                if (recipeTitle.includes(searchQuery)) {
+                    recipe.style.display = 'block';
+                } else {
+                    recipe.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
